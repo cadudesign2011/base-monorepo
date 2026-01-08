@@ -1,0 +1,296 @@
+/* Brasil Logic - Design System Tokens */
+/* Tailwind CSS v4 - CSS-first configuration */
+
+@theme {
+    /* ============================================
+     * TYPOGRAPHY
+     * ============================================ */
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+    'Liberation Mono', monospace;
+
+    /* Font Sizes - Display */
+    --text-display-xl: 55px;
+    --text-display-lg: 50px;
+    --text-display-md: 38px;
+    --text-display-sm: 30px;
+
+    /* Font Sizes - Body */
+    --text-xl: 19px;
+    --text-lg: 16px;
+    --text-base: 15px;
+    --text-sm: 14px;
+    --text-xs: 13px;
+
+    /* Line Heights */
+    --leading-tight: 1.15;
+    --leading-snug: 1.3;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+
+    /* ============================================
+     * COLORS - Brand
+     * ============================================ */
+    /* Primary (Red - Logtrack) */
+    --color-brand-50: oklch(0.97 0.02 25);
+    --color-brand-100: oklch(0.94 0.04 25);
+    --color-brand-200: oklch(0.88 0.08 25);
+    --color-brand-300: oklch(0.78 0.12 25);
+    --color-brand-400: oklch(0.68 0.16 25);
+    --color-brand-500: #dc2626;
+    --color-brand-600: oklch(0.50 0.18 25);
+    --color-brand-700: oklch(0.42 0.16 25);
+    --color-brand-800: oklch(0.35 0.14 25);
+    --color-brand-900: oklch(0.28 0.10 25);
+    --color-brand-950: oklch(0.20 0.08 25);
+
+    /* Accent (Orange) */
+    --color-accent-50: oklch(0.97 0.02 45);
+    --color-accent-100: oklch(0.94 0.04 45);
+    --color-accent-200: oklch(0.88 0.08 45);
+    --color-accent-300: oklch(0.78 0.12 45);
+    --color-accent-400: oklch(0.68 0.16 45);
+    --color-accent-500: #ea580c;
+    --color-accent-600: #c2410c;
+    --color-accent-700: oklch(0.42 0.14 45);
+    --color-accent-800: oklch(0.35 0.12 45);
+    --color-accent-900: oklch(0.28 0.10 45);
+
+    /* ============================================
+     * COLORS - Semantic
+     * ============================================ */
+    /* Surfaces */
+    --color-surface: #ffffff;
+    --color-surface-elevated: #f4f4f5;
+    --color-surface-hover: #e4e4e7;
+    --color-surface-muted: #fafafa;
+
+    /* Backgrounds */
+    --color-bg-primary: #fafafa;
+    --color-bg-secondary: #f4f4f5;
+    --color-bg-dark: #0a1019;
+    --color-bg-footer: #090e17;
+
+    /* Text */
+    --color-text-primary: #18181b;
+    --color-text-secondary: #52525b;
+    --color-text-muted: #a1a1aa;
+    --color-text-inverse: #ffffff;
+
+    /* Borders */
+    --color-border-subtle: rgba(0, 0, 0, 0.06);
+    --color-border-default: rgba(0, 0, 0, 0.08);
+    --color-border-active: rgba(0, 0, 0, 0.12);
+
+    /* States */
+    --color-success-50: #f0fdf4;
+    --color-success-500: #16a34a;
+    --color-success-600: #15803d;
+    --color-warning-50: #fffbeb;
+    --color-warning-500: #ea580c;
+    --color-warning-600: #d97706;
+    --color-danger-50: #fef2f2;
+    --color-danger-500: #dc2626;
+    --color-danger-600: #b91c1c;
+    --color-danger-glow: rgba(220, 38, 38, 0.15);
+    --color-info-50: #eff6ff;
+    --color-info-500: #3b82f6;
+    --color-info-600: #2563eb;
+
+    /* ============================================
+     * SHADOWS
+     * ============================================ */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-brand: 0 4px 14px var(--color-danger-glow), 0 0 0 1px rgba(220, 38, 38, 0.1);
+    --shadow-cta: 0 20px 60px rgba(139, 48, 247, 0.3);
+
+    /* ============================================
+     * SPACING
+     * ============================================ */
+    --spacing-container: 1320px;
+    --spacing-container-padding: 15px;
+    --spacing-section-y: 80px;
+    --spacing-section-y-sm: 60px;
+    --spacing-navbar-height: 72px;
+    --spacing-card-padding: 24px;
+    --spacing-button-x: 35px;
+    --spacing-button-y: 18px;
+
+    /* ============================================
+     * BORDER RADIUS
+     * ============================================ */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+
+    /* ============================================
+     * TRANSITIONS
+     * ============================================ */
+    --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.67, 0.04, 0.3, 0.91);
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+
+    /* ============================================
+     * BREAKPOINTS
+     * ============================================ */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1400px;
+
+    /* ============================================
+     * Z-INDEX
+     * ============================================ */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+}
+
+/* ============================================
+ * GRADIENTS
+ * ============================================ */
+@theme {
+    --gradient-brand: linear-gradient(135deg, var(--color-brand-500) 0%, var(--color-accent-500) 100%);
+    --gradient-brand-hover: linear-gradient(135deg, var(--color-brand-600) 0%, var(--color-accent-600) 100%);
+    --gradient-dark: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-footer) 100%);
+    --gradient-cta: linear-gradient(135deg, #8b30f7 0%, #dc2626 50%, #ea580c 100%);
+}
+
+/* ============================================
+ * KEYFRAMES
+ * ============================================ */
+@keyframes shimmer {
+    0%,
+    100% {
+        transform: translateX(-100%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(100%) rotate(0deg);
+    }
+}
+
+@keyframes ripple-red {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 61, 0, 0.3), 0 0 0 10px rgba(255, 61, 0, 0.3),
+        0 0 0 20px rgba(255, 61, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 61, 0, 0.3), 0 0 0 20px rgba(255, 61, 0, 0.3),
+        0 0 0 30px rgba(255, 61, 0, 0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse-dot {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================
+ * CUSTOM UTILITIES
+ * ============================================ */
+@utility glass {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+@utility glass-dark {
+    background: rgba(10, 16, 25, 0.92);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+@utility content-auto {
+    content-visibility: auto;
+}
+
+@utility gradient-brand {
+    background: var(--gradient-brand);
+}
+
+@utility gradient-brand-text {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@utility text-balance {
+    text-wrap: balance;
+}
+
+@utility text-pretty {
+    text-wrap: pretty;
+}
+
+@utility no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@utility no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* ============================================
+ * CUSTOM VARIANTS
+ * ============================================ */
+@custom-variant hocus (&:hover, &:focus);
+@custom-variant scrolled (.scrolled &);
+@custom-variant group-hocus (:is(.group:hover, .group:focus) &);

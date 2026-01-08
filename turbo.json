@@ -1,0 +1,44 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": ["NODE_ENV", "VERCEL_URL"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
+      "env": ["NODE_ENV"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "inputs": ["$TURBO_DEFAULT$"],
+      "outputs": []
+    },
+    "format": {
+      "inputs": ["$TURBO_DEFAULT$"],
+      "outputs": []
+    },
+    "check": {
+      "dependsOn": ["^check"],
+      "inputs": ["$TURBO_DEFAULT$"],
+      "outputs": []
+    },
+    "type-check": {
+      "dependsOn": ["^type-check"],
+      "inputs": ["$TURBO_DEFAULT$"],
+      "outputs": []
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "brasil-logic-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "biome lint",
+    "format": "biome format",
+    "check": "biome check",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "clean:cache": "turbo clean"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.11",
+    "turbo": "^2.7.2"
+  }
+}
